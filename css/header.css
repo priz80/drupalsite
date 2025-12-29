@@ -1,3 +1,7 @@
+.header-container {
+  max-width: 1194px;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -14,25 +18,35 @@
   object-fit: cover;
 }
 
+.logo {
+  scale: 1.2;
+  padding-left: 42px;
+}
+
+.container-menu {
+  max-width: 1125px;
+  margin: 0 auto;
+}
 .main-menu {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  color: var(--white);
-  margin-bottom: 70px;
+/*   align-items: center; */
+  padding-top: 25px;
+/*   color: var(--white); */
+  margin-bottom: 66px;
   z-index: 10;
 }
 
-ul {
+/* ul {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   height: 24px;
-}
+  width: 852px;
+} */
 
 .item-menu a {
-/*   font-family: var(--second-family); */
+  /*   font-family: var(--second-family); */
   font-weight: 500;
   font-size: 12px;
   line-height: 83%;
@@ -46,12 +60,13 @@ ul {
 }
 
 .header-content {
-  min-width: 487px;
+  max-width: 487px;
   z-index: 1;
+  margin-left: 58px;
 }
 
 .header-content p {
-/*   font-family: var(--font-family); */
+  /*   font-family: var(--font-family); */
   font-weight: 500;
   font-size: 18px;
   line-height: 156%;
@@ -73,7 +88,7 @@ ul {
 
 .button p {
   margin: 0; /* Убираем стандартные отступы у <p> */
-/*   font-family: var(--font-family); */
+  /*   font-family: var(--font-family); */
   font-weight: 500;
   font-size: 12px;
   line-height: 1; /* Заменяем line-height: 100% на line-height: 1 — надёжнее для центрирования */
@@ -102,12 +117,17 @@ ul {
   /* gap: 97px; */
 }
 
+.header-promo_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 100px;
+}
+
 .header-promo {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 545px;
-  align-items: flex-end;
+  gap: 25px;
 }
 
 .item-promo {
@@ -138,10 +158,8 @@ ul {
   margin-top: -15px;
 }
 
-
-
 .item-num {
-/*   font-family: var(--font-family); */
+  /*   font-family: var(--font-family); */
   font-weight: 700;
   font-size: 24px;
   color: var(--white);
@@ -151,10 +169,8 @@ ul {
   font-size: 48px;
 }
 
-
-
 .item-text {
-/*   font-family: var(--font-family); */
+  /*   font-family: var(--font-family); */
   font-weight: 500;
   font-size: 12px;
   color: var(--white);

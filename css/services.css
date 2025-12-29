@@ -1,0 +1,39 @@
+.services-title {
+  margin-top: 145px;
+  max-width: 580px;
+  margin-bottom: 7px;
+}
+
+.services-subtitle {
+  max-width: 493px;
+  margin-bottom: 63px;
+}
+
+.services-subtitle p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 138%;
+  opacity: 0.7;
+}
+
+.services-item_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 117px;
+  margin-bottom: 68px;
+}
+
+.services-item {
+  position: relative;
+  width: 182px;
+  height: 194px;
+}
+
+.services-item_img {
+  position: absolute;
+  left: -55px;
+}
+
+.services-item_icon {
+  margin-bottom: 25px;
+}

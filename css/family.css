@@ -1,0 +1,14 @@
+h1 {
+/*   font-family: var(--font-family); */
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 115%;
+  color: var(--white);
+}
+
+h2 {
+/*   font-family: var(--font-family); */
+  font-weight: 700;
+  font-size: 42px;
+/*   color: var(--main-black); */
+}

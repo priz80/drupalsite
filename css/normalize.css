@@ -1,0 +1,40 @@
+:root {
+  --white: #fff;
+  --main-black: #050c33;
+  --gradient-card-gray: #fff;
+  --icons-1: #f14d34;
+  --icons-2: rgba(249, 224, 80, 0.5);
+  --icons-3: rgba(249, 224, 80, 0.3);
+  --icons-white-gr: #c4c4c4;
+
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Ubuntu", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--white);
+  color: var(--main-black);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+/*   position: relative; */
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}

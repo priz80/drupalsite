@@ -1,0 +1,48 @@
+/* #plans {
+    position: relative;
+} */
+.fon-img {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.tarif {
+  padding-top: 158px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.plans-tarif {
+    display: flex;
+    align-items: center;
+}
+.plans-item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 390px;
+  height: 619px;
+  background: var(--white);
+}
+
+.plans-item_center {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 420px;
+  height: 665px;
+  box-shadow: 0 4px 60px 0 rgba(161, 161, 161, 0.25);
+  background: var(--white);
+}
+
+.plans-item_container {
+    margin: 66px 61px 0 60px;
+}
+
+.prise-block {
+    display: flex;
+}
+
+.plans-item_text li {
+    list-style-image: url(../img/plans_img/checked.svg);
+
+}

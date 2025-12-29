@@ -14,16 +14,16 @@
 
   <body>
     <header class="header">
-            <video autoplay muted loop playsinline>
+      <!-- <video autoplay muted loop playsinline>
         <source src="./video/video.mp4" type="video/mp4" />
-      </video>
+      </video> -->
 
       <div class="druplicon">
         <img src="./img/header_img/druplicon.svg" alt="Drupal" />
       </div>
-      <div class="main-menu container">
-        <div>
-          <img src="./img/header_img/logo.png" alt="Логотип компании" />
+      <div class="main-menu container-menu">
+        <div class="logo">
+          <img src="./img/menu_img/logo.png" alt="Логотип компании" />
         </div>
         <nav>
           <ul>
@@ -31,18 +31,25 @@
               <a href="#support">Поддержка drupal</a>
             </li>
             <li class="item-menu">
-              <a href="#administration">Администрирование</a>
+              <a href="#administration"
+                >Администрирование
+                <img src="./img/menu_img/arrow-lang.svg" alt=""
+              /></a>
             </li>
             <li class="item-menu"><a href="#promotion">Продвижение</a></li>
             <li class="item-menu"><a href="#advertising">Реклама</a></li>
-            <li class="item-menu"><a href="#about">О нас</a></li>
+            <li class="item-menu">
+              <a href="#about"
+                >О нас <img src="./img/menu_img/arrow-lang.svg" alt=""
+              /></a>
+            </li>
             <li class="item-menu"><a href="#projects">Проекты</a></li>
             <li class="item-menu"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
       </div>
       <section id="header">
-        <div class="container">
+        <div class="container header-container">
           <div class="header-block">
             <div class="header-content">
               <h1>Поддержка сайтов на Drupal</h1>
@@ -54,58 +61,64 @@
                 <p>Тарифы</p>
               </a>
             </div>
-            <div class="header-promo">
-              <div class="item-promo">
-                <div class="vline"></div>
-                <div class="item-block">
-                  <div class="item-cup">
-                    <div class="item-num item-nums">#1</div>
-                    <div class="cup">
-                      <img src="./img/header_img/cup.png" alt="" />
+            <div class="header-promo_block">
+              <div class="header-promo">
+                <div class="item-promo">
+                  <div class="vline"></div>
+                  <div class="item-block">
+                    <div class="item-cup">
+                      <div class="item-num item-nums">#1</div>
+                      <div class="cup">
+                        <img src="./img/header_img/cup.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-text item-texts">
+                      Drupal-разработчик в России по версии Рейтинга Рунета
                     </div>
                   </div>
-                  <div class="item-text item-texts">
-                    Drupal-разработчик в России по версии Рейтинга Рунета
+                </div>
+                <div class="item-promo">
+                  <div class="vline"></div>
+                  <div class="item-block">
+                    <div class="item-num">3+</div>
+                    <div class="item-text">
+                      средний опыт специалистов более 3 лет
+                    </div>
+                  </div>
+                </div>
+                <div class="item-promo">
+                  <div class="vline"></div>
+                  <div class="item-block">
+                    <div class="item-num">14</div>
+                    <div class="item-text">лет опыта в сфере Drupal</div>
                   </div>
                 </div>
               </div>
-              <div class="item-promo">
-                <div class="vline"></div>
-                <div class="item-block">
-                  <div class="item-num">3+</div>
-                  <div class="item-text">
-                    средний опыт специалистов более 3 лет
+              <div class="header-promo">
+                <div class="item-promo">
+                  <div class="vline"></div>
+                  <div class="item-block">
+                    <div class="item-num">200+</div>
+                    <div class="item-text">
+                      модулей и тем в формате DrupalGive
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="item-promo">
-                <div class="vline"></div>
-                <div class="item-block">
-                  <div class="item-num">14</div>
-                  <div class="item-text">лет опыта в сфере Drupal</div>
-                </div>
-              </div>
-              <div class="item-promo">
-                <div class="vline"></div>
-                <div class="item-block">
-                  <div class="item-num">200+</div>
-                  <div class="item-text">
-                    модулей и тем в формате DrupalGive
+                <div class="item-promo">
+                  <div class="vline"></div>
+                  <div class="item-block">
+                    <div class="item-num">35 000</div>
+                    <div class="item-text">
+                      часов поддержки сайтов на Drupal
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="item-promo">
-                <div class="vline"></div>
-                <div class="item-block">
-                  <div class="item-num">35 000</div>
-                  <div class="item-text">часов поддержки сайтов на Drupal</div>
-                </div>
-              </div>
-              <div class="item-promo">
-                <div class="vline"></div>
-                <div class="item-block">
-                  <div class="item-num">200+</div>
-                  <div class="item-text">Проектов на поддержке</div>
+                <div class="item-promo">
+                  <div class="vline"></div>
+                  <div class="item-block">
+                    <div class="item-num">200+</div>
+                    <div class="item-text">Проектов на поддержке</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -171,8 +184,8 @@
                 Добавление информации на сайт, создание новых разделов
               </div>
             </div>
-            </div>
-            <div class="services-item_block">
+          </div>
+          <div class="services-item_block">
             <div class="services-item">
               <div class="services-item_img">
                 <img src="./img/services_img/icon/item-img.svg" alt="" />
@@ -231,91 +244,107 @@
           </div>
           <div class="support-block">
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">01</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
                 <img src="./img/support_img/icon/support1.svg" alt="" />
               </div>
             </div>
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">02</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
-                <img src="./img/support_img/icon/support1.svg" alt="" />
+                <img src="./img/support_img/icon/support2.svg" alt="" />
               </div>
             </div>
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">03</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
-                <img src="./img/support_img/icon/support1.svg" alt="" />
+                <img src="./img/support_img/icon/settings.svg" alt="" />
               </div>
             </div>
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">04</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
-                <img src="./img/support_img/icon/support1.svg" alt="" />
+                <img src="./img/support_img/icon/group.svg" alt="" />
               </div>
             </div>
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">05</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
-                <img src="./img/support_img/icon/support1.svg" alt="" />
+                <img src="./img/support_img/icon/support5.svg" alt="" />
               </div>
             </div>
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">06</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
-                <img src="./img/support_img/icon/support1.svg" alt="" />
+                <img src="./img/support_img/icon/support6.svg" alt="" />
               </div>
             </div>
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">07</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
-                <img src="./img/support_img/icon/support1.svg" alt="" />
+                <img src="./img/support_img/icon/support7.svg" alt="" />
               </div>
             </div>
             <div class="support-card">
-              <div class="card-num">1</div>
-              <div class="card-title">Постановка задачи по Email</div>
-              <div class="card-text">
-                Удобная и привычная модель постановки задач, при которой задачи
-                фиксируются и никогда не теряются.
+              <div class="container-card">
+                <div class="card-num">08</div>
+                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-text">
+                  Удобная и привычная модель постановки задач, при которой
+                  задачи фиксируются и никогда не теряются.
+                </div>
               </div>
               <div class="card-img">
-                <img src="./img/support_img/icon/support1.svg" alt="" />
+                <img src="./img/support_img/icon/support8.svg" alt="" />
               </div>
             </div>
           </div>
@@ -326,11 +355,91 @@
           </div>
         </div>
       </section>
-      <!-- <section id="plans">
+      <section id="plans">
+        <div class="fon-img">
+          <img src="./img/plans_img/D.svg" alt="" />
+        </div>
         <div class="container">
-          <h2>Поддержка от Drupal-coder</h2>
-          <p>Выберите подходящий тариф: Старт, Про, Бизнес.</p>
-          <p>Гибкая система оплаты и масштабирования.</p>
+          <div class="tarif">
+            <h2>Тарифы</h2>
+          </div>
+          <div class="plans-tarif">
+            <div class="plans-item">
+              <div class="plans-item_container">
+                <div class="item-prise">Стартовый</div>
+                <div class="prise-block">
+                  <div class="prise">2000</div>
+                  <div class="price-currency">P</div>
+                </div>
+
+                <div class="prise-time">в час</div>
+
+                <div class="line">
+                  <img src="./img/plans_img/line.svg" alt="" />
+                </div>
+                <div class="plans-item_text">
+                  <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                  </ul>
+                </div>
+                <a href="#">Оставить заявку</a>
+              </div>
+            </div>
+            <div class="plans-item_center">
+              <div class="plans-item_container">
+                <div class="item-prise">Бизнес</div>
+                <div class="prise-block">
+                  <div class="prise">2000</div>
+                  <div class="price-currency">P</div>
+                </div>
+
+                <div class="prise-time">в час</div>
+
+                <div class="line">
+                  <img src="./img/plans_img/line.svg" alt="" />
+                </div>
+                <div class="plans-item_text">
+                  <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                  </ul>
+                </div>
+                <a href="#">Оставить заявку</a>
+              </div>
+            </div>
+            <div class="plans-item">
+              <div class="plans-item_container">
+                <div class="item-prise">Vip</div>
+                <div class="prise-block">
+                  <div class="prise">2000</div>
+                  <div class="price-currency">P</div>
+                </div>
+
+                <div class="prise-time">в час</div>
+
+                <div class="line">
+                  <img src="./img/plans_img/line.svg" alt="" />
+                </div>
+                <div class="plans-item_text">
+                  <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                  </ul>
+                </div>
+                <a href="#">Оставить заявку</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -376,7 +485,7 @@
             <button type="submit">Отправить</button>
           </form>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <script src="./js/underlining.js"></script>

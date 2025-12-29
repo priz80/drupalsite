@@ -25,6 +25,13 @@
   background: var(--white);
 }
 
+.plans-item_left {
+    margin-right: -10px;
+}
+.plans-item_right {
+    margin-left: -10px;
+}
+
 .plans-item_center {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -32,6 +39,7 @@
   height: 665px;
   box-shadow: 0 4px 60px 0 rgba(161, 161, 161, 0.25);
   background: var(--white);
+  z-index: 1;
 }
 
 .plans-item_container {
@@ -44,5 +52,40 @@
 
 .plans-item_text li {
     list-style-image: url(../img/plans_img/checked.svg);
+
+}
+
+.plans-ps {
+    width: 468px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 52px;
+}
+
+.plans-ps a {
+font-weight: 500;
+font-size: 16px;
+line-height: 138%;
+text-align: center;
+opacity: 0.5;
+}
+.plans-taketarif {
+    width: 290px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-taketarif a  {
+
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-decoration: underline;
+text-decoration-skip-ink: none;
 
 }

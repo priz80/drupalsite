@@ -19,7 +19,7 @@
 .services-item_block {
   display: flex;
   flex-wrap: wrap;
-  gap: 117px;
+  justify-content: space-between;
   margin-bottom: 68px;
 }
 

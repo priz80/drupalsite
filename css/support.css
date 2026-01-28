@@ -1,12 +1,13 @@
 #support {
-  position: relative;
+  /* position: relative; */
+  /* margin-bottom: 160px; */
 }
 
 .suport-container {
-  max-width: 1184px;
+  /* max-width: 1184px;
   width: 90%;
-  margin: 0 auto;
-  padding-bottom: 757px;
+  margin: 0 auto; */
+  /* padding-bottom: 757px; */
 }
 
 .support-title {
@@ -19,11 +20,12 @@
 .support-block {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 5px;
 }
 
 .support-card {
-    position: relative;
+  position: relative;
   border-radius: 5px;
   width: 292px;
   height: 292px;
@@ -32,7 +34,7 @@
 }
 
 .container-card {
-margin: 27px 34px 0 26px;
+  margin: 27px 34px 0 26px;
 }
 
 .card-num {
@@ -42,8 +44,8 @@ margin: 27px 34px 0 26px;
   margin-bottom: 20px;
 }
 .card-title {
-  font-weight: 700;
-  font-size: 18px;
+/*   font-weight: 700;
+  font-size: 18px; */
   margin-bottom: 12px;
 }
 .card-text {
@@ -53,29 +55,13 @@ margin: 27px 34px 0 26px;
   opacity: 0.7;
 }
 .card-img {
-    position: absolute;
-    right: 0;
-    bottom: -4px;
+  position: absolute;
+  right: 0;
+  bottom: -4px;
 }
 
-.mask {
-  position: absolute;
-  top: 537px;
-  width: 100%;
-  height: 983px;
-  z-index: -1;
-  background: linear-gradient(
-      233deg,
-      rgba(255, 255, 255, 0.28) 0%,
-      rgba(255, 255, 255, 0.28) 100%
-    )
-    #040613;
-}
-
-.laptop img {
-  position: absolute;
-  top: 552px;
-  width: 660px;
-  height: 517px;
-  box-shadow: 0 4px 69px 0 rgba(16, 26, 58, 0.11);
+@media (max-width: 1100px) {
+  .support-card {
+    width: 100%;
+  }
 }

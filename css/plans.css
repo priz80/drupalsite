@@ -1,10 +1,11 @@
-/* #plans {
-    position: relative;
-} */
+#plans {
+  margin-bottom: 160px;
+}
 .fon-img {
   position: absolute;
   right: 0;
-  z-index: -1;
+  z-index: -10;
+  margin-top: -160px;
 }
 
 .tarif {
@@ -14,28 +15,30 @@
 }
 
 .plans-tarif {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .plans-item {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  width: 390px;
-  height: 619px;
+  /* border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px; */
+  width: 100%;
+  max-width: 390px;
+  /* height: 619px; */
   background: var(--white);
 }
 
 .plans-item_left {
-    margin-right: -10px;
+  margin-right: -10px;
 }
 .plans-item_right {
-    margin-left: -10px;
+  margin-left: -10px;
 }
 
 .plans-item_center {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
   height: 665px;
   box-shadow: 0 4px 60px 0 rgba(161, 161, 161, 0.25);
   background: var(--white);
@@ -43,49 +46,170 @@
 }
 
 .plans-item_container {
-    margin: 66px 61px 0 60px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 78px 60px 48px 60px;
+}
+
+.item-prise {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--icons-1);
 }
 
 .prise-block {
-    display: flex;
+  display: flex;
+}
+
+.prise {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--main-black);
+}
+
+.price-currency {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  color: var(--main-black);
+}
+
+.prise-time {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-black);
+}
+
+.plans-item_text {
+  margin-bottom: 43px;
+}
+.plans-item_text li {
+  list-style-image: url(../img/plans_img/checked.svg);
 }
 
 .plans-item_text li {
-    list-style-image: url(../img/plans_img/checked.svg);
+  margin-bottom: 21px;
+}
 
+.plans-button {
+  border: 1px solid var(--icons-1);
+  max-width: 260px;
+}
+
+.plans-button_style {
+  color: var(--icons-1);
+}
+
+.plans-button_style:hover {
+  color: var(--white);
 }
 
 .plans-ps {
-    width: 468px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 52px;
+  width: 100%;
+  max-width: 468px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 52px;
 }
 
 .plans-ps a {
-font-weight: 500;
-font-size: 16px;
-line-height: 138%;
-text-align: center;
-opacity: 0.5;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  text-align: center;
+  color: var(--main-black);
+  opacity: 0.5;
 }
 .plans-taketarif {
-    width: 290px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  max-width: 290px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.plans-taketarif a  {
+.plans-taketarif a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: var(--main-black);
+}
 
-font-weight: 500;
-font-size: 12px;
-line-height: 100%;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-text-decoration: underline;
-text-decoration-skip-ink: none;
+.plans-item_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.plans-title {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.plans-item_title {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--icons-1);
+  margin-bottom: 20px;
+}
+
+/* .plans-price_block {
+  width: 230px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+ */
+/* .item-price {
+  display: flex;
+  justify-content: space-between;
+}
+ */
+/* .plans-item_price {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+ */
+/* .item-price_nominal {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+} */
+
+/* .item-price_period {
+  font-weight: 500;
+  font-size: 16px;
+} */
+
+.plans-item_line {
+  width: 100%;
+  height: 1px;
+  background: var(--main-black);
+  opacity: 0.2;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1100px) {
+  /* .plans-item_line {
+    display: none;
+  } */
 }

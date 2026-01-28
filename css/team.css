@@ -1,0 +1,48 @@
+#team {
+  margin-bottom: 160px;
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.team-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 120px;
+}
+
+.team-tile {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.team-image {
+  margin-bottom: 20px;
+}
+
+.team-description span {
+  font-weight: 700;
+}
+
+.team-button {
+  width: 260px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.team-button span {
+  font-size: 12px;
+  color: var(--main-black);
+}
+
+/* @media (max-width: 1100px) {
+    #team {
+        display: none;
+    }
+} */

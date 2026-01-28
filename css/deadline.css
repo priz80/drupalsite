@@ -1,0 +1,13 @@
+#deadline {
+    margin-bottom: 160px;
+}
+
+.deadline-title {
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.deadline-item_text span {
+    font-size: 28px;
+    font-weight: 700;
+}

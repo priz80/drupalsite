@@ -11,9 +11,23 @@
   --second-family: "Ubuntu", sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+html,
+body {
   margin: 0;
   padding: 0;
+  /* overflow-x: hidden; */ /* 🔥 Главное: убирает горизонтальный скролл */
+  width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -24,17 +38,51 @@ body {
   color: var(--main-black);
 }
 
+@media (max-width: 1100px) {
+  body {
+    margin-bottom: 52px;
+  }
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: var(--white);
+}
+
+p {
+  margin: 0;
 }
 
 .container {
-/*   position: relative; */
-  max-width: 1080px;
-  width: 90%;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px; /* Добавить отступы! */
+  box-sizing: border-box;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid var(--icons-1);
+  background: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: var(--icons-1);
 }

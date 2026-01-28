@@ -1,0 +1,19 @@
+#reviews {
+  margin-bottom: 160px;
+}
+
+.reviews-title {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.reviews-block {
+  display: flex;
+  justify-content: center;
+}
+
+/* @media (max-width: 1100px) {
+    #reviews {
+        display: none;
+    }
+} */

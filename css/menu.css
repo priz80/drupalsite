@@ -8,12 +8,12 @@
 
 .logo {
   z-index: 10;
-  padding: 15px;
 }
 
 .dropdown-menu > ul {
   display: flex;
   gap: 30px;
+  padding: 0;
 }
 
 .dropdown-menu a {

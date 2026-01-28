@@ -1,0 +1,25 @@
+#footer {
+    max-height: 150px;
+    padding-top: 56px;
+  padding-bottom: 54px;
+}
+
+.footer-container {
+  width: 522px;
+  height: 40px;
+  /* margin-top: 56px;
+  margin-bottom: 54px; */
+}
+
+.footer-container p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+
+.line-footer {
+  border: 1px solid var(--white);
+}

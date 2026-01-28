@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -21,34 +21,80 @@
       <div class="druplicon">
         <img src="./img/header_img/druplicon.svg" alt="Drupal" />
       </div>
-      <div class="main-menu container-menu">
+      <div class="container container-menu desktop-menu">
         <div class="logo">
-          <img src="./img/menu_img/logo.png" alt="Логотип компании" />
+          <a href="#"><img src="./img/menu_img/logo.svg" alt="Logo" /></a>
         </div>
-        <nav>
+
+        <!-- Меню для десктопа -->
+        <nav class="dropdown-menu">
           <ul>
-            <li class="item-menu">
-              <a href="#support">Поддержка drupal</a>
+            <li class="under-line"><a href="#services">Поддержка drupal</a></li>
+            <li class="dropdown">
+              <a href="#administration">Администрирование ▼</a>
+              <ul class="dropdown-content">
+                <li><a href="#migration">Миграция</a></li>
+                <li><a href="#backups">Бэкапы</a></li>
+                <li><a href="#security">Аудит безопасности</a></li>
+                <li><a href="#optimization">Оптимизация скорости</a></li>
+                <li><a href="#https">Переезд на https</a></li>
+              </ul>
             </li>
-            <li class="item-menu">
-              <a href="#administration"
-                >Администрирование
-                <img src="./img/menu_img/arrow-lang.svg" alt=""
-              /></a>
+            <li class="under-line"><a href="#promotion">Продвижение</a></li>
+            <li class="under-line"><a href="#advertising">Реклама</a></li>
+            <li class="dropdown">
+              <a href="#about">О нас ▼</a>
+              <ul class="dropdown-content">
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#drupalgive">Drupalgive</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#courses">Курсы drupal</a></li>
+              </ul>
             </li>
-            <li class="item-menu"><a href="#promotion">Продвижение</a></li>
-            <li class="item-menu"><a href="#advertising">Реклама</a></li>
-            <li class="item-menu">
-              <a href="#about"
-                >О нас <img src="./img/menu_img/arrow-lang.svg" alt=""
-              /></a>
+            <li class="under-line"><a href="#cases">Проекты</a></li>
+            <li class="under-line"><a href="#contacty">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Бургер-кнопка -->
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Обёртка меню для мобильного -->
+        <nav class="dropdown-menu mobile-menu">
+          <ul>
+            <li class="under-line"><a href="#services">Поддержка drupal</a></li>
+            <li class="dropdown">
+              <a href="#administration">Администрирование ▼</a>
+              <ul class="dropdown-content">
+                <li><a href="#migration">Миграция</a></li>
+                <li><a href="#backups">Бэкапы</a></li>
+                <li><a href="#security">Аудит безопасности</a></li>
+                <li><a href="#optimization">Оптимизация скорости</a></li>
+                <li><a href="#https">Переезд на https</a></li>
+              </ul>
             </li>
-            <li class="item-menu"><a href="#projects">Проекты</a></li>
-            <li class="item-menu"><a href="#contacts">Контакты</a></li>
+            <li class="under-line"><a href="#promotion">Продвижение</a></li>
+            <li class="under-line"><a href="#advertising">Реклама</a></li>
+            <li class="dropdown">
+              <a href="#about">О нас ▼</a>
+              <ul class="dropdown-content">
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#drupalgive">Drupalgive</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#courses">Курсы drupal</a></li>
+              </ul>
+            </li>
+            <li class="under-line"><a href="#cases">Проекты</a></li>
+            <li class="under-line"><a href="#contacty">Контакты</a></li>
           </ul>
         </nav>
       </div>
-      <section id="header">
+
+      <section id="head">
         <div class="container header-container">
           <div class="header-block">
             <div class="header-content">
@@ -57,68 +103,60 @@
                 Сопровождение и поддержка сайтов<br />
                 на CMS Drupal любых версий и запущенности
               </p>
-              <a href="#plans" class="button header-button header-button_style">
-                <p>Тарифы</p>
-              </a>
+              <a href="#plans" class="button header-button"> Тарифы </a>
             </div>
             <div class="header-promo_block">
-              <div class="header-promo">
-                <div class="item-promo">
-                  <div class="vline"></div>
-                  <div class="item-block">
-                    <div class="item-cup">
-                      <div class="item-num item-nums">#1</div>
-                      <div class="cup">
-                        <img src="./img/header_img/cup.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="item-text item-texts">
-                      Drupal-разработчик в России по версии Рейтинга Рунета
+              <div class="item-promo">
+                <div class="vline"></div>
+                <div class="item-block">
+                  <div class="item-cup">
+                    <div class="item-num item-nums">#1</div>
+                    <div class="cup">
+                      <img src="./img/header_img/cup.png" alt="Кубок" />
                     </div>
                   </div>
-                </div>
-                <div class="item-promo">
-                  <div class="vline"></div>
-                  <div class="item-block">
-                    <div class="item-num">3+</div>
-                    <div class="item-text">
-                      средний опыт специалистов более 3 лет
-                    </div>
-                  </div>
-                </div>
-                <div class="item-promo">
-                  <div class="vline"></div>
-                  <div class="item-block">
-                    <div class="item-num">14</div>
-                    <div class="item-text">лет опыта в сфере Drupal</div>
+                  <div class="item-text">
+                    Drupal-разработчик в России по версии Рейтинга Рунета
                   </div>
                 </div>
               </div>
-              <div class="header-promo">
-                <div class="item-promo">
-                  <div class="vline"></div>
-                  <div class="item-block">
-                    <div class="item-num">200+</div>
-                    <div class="item-text">
-                      модулей и тем в формате DrupalGive
-                    </div>
+              <div class="item-promo">
+                <div class="vline"></div>
+                <div class="item-block">
+                  <div class="item-num">3+</div>
+                  <div class="item-text">
+                    средний опыт специалистов более 3 лет
                   </div>
                 </div>
-                <div class="item-promo">
-                  <div class="vline"></div>
-                  <div class="item-block">
-                    <div class="item-num">35 000</div>
-                    <div class="item-text">
-                      часов поддержки сайтов на Drupal
-                    </div>
+              </div>
+              <div class="item-promo">
+                <div class="vline"></div>
+                <div class="item-block">
+                  <div class="item-num">14</div>
+                  <div class="item-text">лет опыта в сфере Drupal</div>
+                </div>
+              </div>
+              <div class="item-promo">
+                <div class="vline"></div>
+                <div class="item-block">
+                  <div class="item-num">200+</div>
+                  <div class="item-text">
+                    модулей и тем в формате DrupalGive
                   </div>
                 </div>
-                <div class="item-promo">
-                  <div class="vline"></div>
-                  <div class="item-block">
-                    <div class="item-num">200+</div>
-                    <div class="item-text">Проектов на поддержке</div>
-                  </div>
+              </div>
+              <div class="item-promo">
+                <div class="vline"></div>
+                <div class="item-block">
+                  <div class="item-num">35 000</div>
+                  <div class="item-text">часов поддержки сайтов на Drupal</div>
+                </div>
+              </div>
+              <div class="item-promo">
+                <div class="vline"></div>
+                <div class="item-block">
+                  <div class="item-num">200+</div>
+                  <div class="item-text">Проектов на поддержке</div>
                 </div>
               </div>
             </div>
@@ -235,7 +273,7 @@
       </section>
 
       <section id="support">
-        <div class="suport-container">
+        <div class="container suport-container">
           <div class="support-title">
             <h2>
               Поддержка<br />
@@ -246,7 +284,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">01</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -259,7 +299,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">02</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -272,7 +314,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">03</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -285,7 +329,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">04</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -298,7 +344,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">05</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -311,7 +359,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">06</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -324,7 +374,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">07</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -337,7 +389,9 @@
             <div class="support-card">
               <div class="container-card">
                 <div class="card-num">08</div>
-                <div class="card-title">Постановка задачи по Email</div>
+                <div class="card-title">
+                  <h3>Постановка задачи по Email</h3>
+                </div>
                 <div class="card-text">
                   Удобная и привычная модель постановки задач, при которой
                   задачи фиксируются и никогда не теряются.
@@ -349,155 +403,436 @@
             </div>
           </div>
         </div>
-        <div class="mask">
-          <div class="laptop">
-            <img src="./img/support_img/laptop.png" alt="" />
+      </section>
+
+      <section id="expert">
+        <div class="laptop-expert_img"></div>
+        <div class="drupal-expert_img"></div>
+
+        <div class="container expert-container">
+          <div class="expert-block">
+            <div class="expert-content">
+              <h2>Экспертиза в Drupal, опыт 14 лет!</h2>
+            </div>
+            <div class="expert-promo_block">
+              <div class="expert-promo">
+                <div class="item-expert">
+                  <div class="vline-expert"></div>
+
+                  <div class="expert-item-text">
+                    Только системный подход – контроль версий, резервирование и
+                    тестирование!
+                  </div>
+                </div>
+                <div class="item-expert">
+                  <div class="vline-expert"></div>
+
+                  <div class="expert-item-text">
+                    Только Drupal сайты, не берем на поддержку сайты на других
+                    CMS!
+                  </div>
+                </div>
+              </div>
+              <div class="expert-promo mobile-expert">
+                <div class="item-expert">
+                  <div class="vline-expert"></div>
+                  <div class="expert-item_text">
+                    Усаствуемм в разработке ядра Drupal и модулей на Drupal.org,
+                    <span style="color: var(--icons-1)"
+                      >разрабатываем свои модули Drupal</span
+                    >
+                  </div>
+                </div>
+                <div class="item-expert">
+                  <div class="vline-expert"></div>
+                  <div class="expert-item-text">
+                    Поддерживаем сайты на Drupal 5, 6, 7, и 8
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       
+
       <section id="plans">
         <div class="fon-img">
           <img src="./img/plans_img/D.svg" alt="" />
         </div>
         <div class="container">
-          <div class="tarif">
+          <div class="plans-title">
             <h2>Тарифы</h2>
           </div>
-          <div class="plans-tarif">
-            <div class="plans-item plans-item_left">
-              <div class="plans-item_container">
-                <div class="item-prise">Стартовый</div>
-                <div class="prise-block">
-                  <div class="prise">2000</div>
-                  <div class="price-currency">P</div>
+            <div class="plans-item_block">
+              <div class="plans-item">
+                <div class="plans-item_container">
+                  <div class="plans-price_block">
+                    <p class="plans-item_title">Стартовый</p>
+                  <div class="plans-item_line"></div>
+                  <div class="plans-item_text">
+                    <ul>
+                      <li>Предоплата от 2 часов</li>
+                      <li>Консультации и работы по SEO</li>
+                      <li>Услуги дизайнера</li>
+                      <li>Стандартное время реакции</li>
+                      <li>
+                        Неиспользованные оплаченные часы переносятся на следующий
+                        месяц
+                      </li>
+                    </ul>
+                  </div>
+                  <a
+                    href="#contacty"
+                    class="button plans-button plans-button_style"
+                  >
+                    Свяжитесь с нами
+                  </a>
                 </div>
-
-                <div class="prise-time">в час</div>
-
-                <div class="line">
-                  <img src="./img/plans_img/line.svg" alt="" />
-                </div>
-                <div class="plans-item_text">
-                  <ul>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                  </ul>
-                </div>
-                <a href="#">Оставить заявку</a>
               </div>
-            </div>
-            <div class="plans-item_center">
-              <div class="plans-item_container">
-                <div class="item-prise">Бизнес</div>
-                <div class="prise-block">
-                  <div class="prise">2000</div>
-                  <div class="price-currency">P</div>
-                </div>
-
-                <div class="prise-time">в час</div>
-
-                <div class="line">
-                  <img src="./img/plans_img/line.svg" alt="" />
-                </div>
-                <div class="plans-item_text">
-                  <ul>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                  </ul>
-                </div>
-                <a href="#">Оставить заявку</a>
+              
               </div>
-            </div>
-            <div class="plans-item plans-item_right">
-              <div class="plans-item_container">
-                <div class="item-prise">Vip</div>
-                <div class="prise-block">
-                  <div class="prise">2000</div>
-                  <div class="price-currency">P</div>
+              <div class="plans-item">
+                <div class="plans-item_container">
+                  <div class="plans-price_block">
+                    <p class="plans-item_title">Стартовый</p>
+                  <div class="plans-item_line"></div>
+                  <div class="plans-item_text">
+                    <ul>
+                      <li>Предоплата от 2 часов</li>
+                      <li>Консультации и работы по SEO</li>
+                      <li>Услуги дизайнера</li>
+                      <li>Стандартное время реакции</li>
+                      <li>
+                        Неиспользованные оплаченные часы переносятся на следующий
+                        месяц
+                      </li>
+                    </ul>
+                  </div>
+                  <a
+                    href="#contacty"
+                    class="button plans-button plans-button_style"
+                  >
+                    Свяжитесь с нами
+                  </a>
                 </div>
-
-                <div class="prise-time">в час</div>
-
-                <div class="line">
-                  <img src="./img/plans_img/line.svg" alt="" />
-                </div>
-                <div class="plans-item_text">
-                  <ul>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                  </ul>
-                </div>
-                <a href="#">Оставить заявку</a>
               </div>
+              
+              </div>
+              <div class="plans-item">
+                <div class="plans-item_container">
+                  <div class="plans-price_block">
+                    <p class="plans-item_title">Стартовый</p>
+                  <div class="plans-item_line"></div>
+                  <div class="plans-item_text">
+                    <ul>
+                      <li>Предоплата от 2 часов</li>
+                      <li>Консультации и работы по SEO</li>
+                      <li>Услуги дизайнера</li>
+                      <li>Стандартное время реакции</li>
+                      <li>
+                        Неиспользованные оплаченные часы переносятся на следующий
+                        месяц
+                      </li>
+                    </ul>
+                  </div>
+                  <a
+                    href="#contacty"
+                    class="button plans-button plans-button_style"
+                  >
+                    Свяжитесь с нами
+                  </a>
+                </div>
+              </div>
+              
+              </div>
+            
             </div>
-          </div>
-          <div class="plans-ps">
-            <a href="#"
-              >Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам
-              индивидуальные условия!</a
-            >
+        <div class="plans-ps">
+            <a href="#contacty">
+              Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам
+              индивидуальные условия!
+            </a>
           </div>
           <div class="plans-taketarif">
-            <a href="#">Получить индивидуальный тариф</a>
+            <a href="#contacty">Получить индивидуальный тариф</a>
           </div>
-        </div>
       </section>
 
-      <section id="cases">
+      <section id="deadline">
         <div class="container">
-          <h2>Кейсы</h2>
-          <p>Успешные проекты наших клиентов.</p>
-          <p>От аналитики до внедрения сложных систем.</p>
+          <div class="deadline-title">
+            <h2>Наши профессиональные разработчики выполняют быстро любые задачи</h2>
+          </div>
+          <div class="services-item_block">
+            <div class="services-item">
+              
+              <div class="services-item_icon">
+                <img src="./img/deadline_img/competency-20.svg" alt="" />
+              </div>
+              <div class="deadline-item_text">
+                <span>от 1ч</span>
+                <p>Настройка события GA в интернет-магазине</p>
+              </div>
+            </div>
+            <div class="services-item">
+              <div class="services-item_icon">
+                <img src="./img/deadline_img/competency-21.svg" alt="" />
+              </div>
+              <div class="deadline-item_text ">
+                <span>от 20ч</span>
+                <p>Разработка мобильной версии сайта</p></div>
+            </div>
+            <div class="services-item">
+              <div class="services-item_icon">
+                <img src="./img/deadline_img/competency-22.svg" alt="" />
+              </div>
+              <div class="deadline-item_text">
+                <span>от 8ч</span>
+                <p>Интеграция модуля оплаты</p></div>
+            </div>
+          </div>
+          
         </div>
       </section>
 
       <section id="team">
         <div class="container">
-          <h2>Команда</h2>
-          <p>Опытные специалисты в области IT и управления.</p>
-          <p>Команда, которая знает, как добиваться результата.</p>
+          <div class="team-title">
+            <h2>Команда</h2>
+          </div>
+          <div class="team-block">
+            <div class="team-tile">
+              <div class="team-image">
+                <img src="./img/team_img/IMG_2472_0.jpg" alt="Член команды" />
+              </div>
+              <div class="team-description">
+                <span>Сергей Синица</span>
+                <p>Руководитель отдела веб-разработки, канд. техн. наук, заместитель директора</p>
+              </div>
+            </div>
+            <div class="team-tile">
+              <div class="team-image">
+                <img src="./img/team_img/IMG_2539_0.jpg" alt="Член команды" />
+              </div>
+              <div class="team-description">
+                  <span>Роман Агабеков</span>
+                  <p>Руководитель отдела DevOps, директор</p>
+                </div>
+            </div>
+            <div class="team-tile">
+              <div class="team-image">
+                <img src="./img/team_img/IMG_2474_1.jpg" alt="Член команды" />
+              </div>
+              <div class="team-description">
+                  <span>Алексей Синица</span>
+                  <p>Руководитель отдела поддержки сайтов</p>
+                </div>
+            </div>
+            <div class="team-tile">
+              <div class="team-image">
+                <img src="./img/team_img/IMG_2522_0.jpg" alt="Член команды" />
+              </div>
+              <div class="team-description">
+                  <span>Дарья Бочкарева</span>
+                  <p>Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</p>
+                </div>
+            </div>
+            <div class="team-tile">
+              <div class="team-image">
+                <img src="./img/team_img/IMG_9971_16.jpg" alt="Член команды" />
+              </div>
+              <div class="team-description">
+                  <span>Ирина Торкунова</span>
+                  <p>Менеджер по работе с клиентами</p>
+                </div>
+            </div>
+            
+          </div>
+          <button type="button" class="button team-button"><span>Вся команда</span></button>
+        </div>
+      </section>
+
+         <section id="cases">
+        <div class="container">
+          <div class="cases-title">
+            <h2>Последние кейсы</h2>
+          </div>
+          <div class="cases-tile_block">
+            <div class="cases-tile">
+              <img src="./img/casses_img/image 9.2.png" alt="Кейс проекта" />
+              <!-- <h3 class="cases-title">Настройка выгрузки YML для Яндекс.Маркета</h3> -->
+
+              <p class="cases-title_data"><!-- 22.04.2019 --></p>
+              <p class="cases-title_subitle">
+                <!-- Эти слова совершенно справедливы, однако гипнотический рифф
+                продолжает паузный пласт. -->
+              </p>
+            </div>
+            <div class="cases-tile_large">
+              <img src="./img/casses_img/big.png" alt="Большой кейс" />
+            </div>
+          </div>
+          <div class="cases-tile_block">
+            <div class="cases-tile">
+              <img src="./img/casses_img/yml.png" alt="YML кейс" />
+            </div>
+            <div class="cases-tile">
+              <img src="./img/casses_img/ymlyml.png" alt="YML кейс" />
+            </div>
+            <div class="cases-tile">
+              <img
+                src="./img/casses_img/card-description.png"
+                alt="Описание карточки"
+              />
+            </div>
+          </div>
+          <div class="cases-tile_block">
+            <div class="cases-tile_large">
+              <img src="./img/casses_img/bigbog.png" alt="Большой проект" />
+            </div>
+            <div class="cases-tile">
+              <img
+                src="./img/casses_img/card-vert-image.png"
+                alt="Вертикальное изображение"
+              />
+            </div>
+          </div>
+          <a href="#cases" class="button cases-button cases-button_style">
+            <span>Показать еще</span>
+          </a>
         </div>
       </section>
 
       <section id="reviews">
         <div class="container">
-          <h2>Отзывы</h2>
-          <p>Наши клиенты доверяют нам и рекомендуют другим.</p>
-          <p>Смотрите реальные отзывы от компаний и предпринимателей.</p>
+          <div class="reviews-title">
+            <h2>Отзывы</h2>
+          </div>
+          <!-- <div class="reviews-block">
+            <img src="./img/reviews_img/Frame 4.png" alt="Отзывы клиентов" />
+          </div> -->
         </div>
       </section>
 
       <section id="partners">
         <div class="container">
-          <h2>Партнёры</h2>
-          <p>Мы сотрудничаем с ведущими компаниями в отрасли.</p>
-          <p>Наши технологии интегрированы с лучшими платформами.</p>
+          <div class="partners-title">
+            <h2>С нами работают</h2>
+            <p>
+              Десятки компаний доверяют нам самое ценное, что у них есть в
+              интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество
+              было долгим.
+            </p>
+          </div>
+        </div>
+        <div class="partners-block">
+          <div class="partners-block_up">
+            <img
+              src="./img/partners_img/Group 3.png"
+              alt="Логотипы партнеров"
+            />
+          </div>
+          <div class="partners-block_down">
+            <img
+              src="./img/partners_img/Group 4.png"
+              alt="Логотипы партнеров"
+            />
+          </div>
         </div>
       </section>
 
-      <section id="footer">
+      <section id="contacty">
+        <div class="contacty-image"></div>
         <div class="container">
-          <h2>Свяжитесь с нами</h2>
-          <form class="footer">
-            <input type="text" placeholder="Ваше имя" required />
-            <input type="email" placeholder="Email" required />
-            <textarea rows="5" placeholder="Сообщение"></textarea>
-            <button type="submit">Отправить</button>
-          </form>
+          <div class="contacty-container">
+            <div class="contacty-img"></div>
+            <!-- <div class="contacty-image"></div> -->
+            <div class="contacty">
+              <h2>Оставить заявку на поддержку сайта</h2>
+              <p>
+                Срочно нужна поддержка сайта? Ваша команда не успевает
+                справиться самостоятельно или предыдущий подрядчик не справился
+                с работой? Тогда вам точно к нам! Просто оставьте заявку и наш
+                менеджер с вами свяжется!
+              </p>
+              <div class="tel">
+                <img src="./img/contacty_img/phone-line.svg" alt="Телефон" />
+                <p>8 800 222-26-73</p>
+              </div>
+              <div class="email">
+                <img src="./img/contacty_img/mail.svg" alt="Email" />
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+              </div>
+            </div>
+            <div class="forma-container">
+              <form class="forma" action="#" method="post">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                  class="input-area"
+                  aria-label="Ваше имя"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Телефон"
+                  required
+                  class="input-area"
+                  aria-label="Телефон"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  class="input-area"
+                  aria-label="Email"
+                />
+                <textarea
+                  name="comment"
+                  placeholder="Ваш комментарий"
+                  class="text-area"
+                  aria-label="Ваш комментарий"
+                ></textarea>
+
+                <div class="agreement">
+                  <input
+                    type="checkbox"
+                    name="agreement"
+                    id="agreement"
+                    class="checkbox"
+                    required
+                  />
+                  <label for="agreement">
+                    Отправляя заявку, я даю согласие на обработку своих
+                    персональных данных
+                  </label>
+                </div>
+                <button type="submit" class="button forma-button">
+                  Оставить заявку
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
+        <div class="line-footer"></div>
+        <footer id="footer">
+          <div class="container">
+            <div class="footer-container">
+              <p>Проект ООО «Инитлаб», Краснодар, Россия.</p>
+              <p>
+                Drupal является зарегистрированной торговой маркой Dries
+                Buytaert.
+              </p>
+            </div>
+          </div>
+        </footer>
       </section>
     </main>
 
-    <script src="./js/underlining.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

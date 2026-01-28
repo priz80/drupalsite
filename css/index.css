@@ -1,11 +1,15 @@
 @import '../css/normalize.css';
 @import '../css/family.css';
+@import '../css/menu.css';
 @import '../css/header.css';
 @import '../css/services.css';
 @import '../css/support.css';
+@import '../css/expert.css';
 @import '../css/plans.css';
+@import '../css/deadline.css';
 @import '../css/casses.css';
 @import '../css/team.css';
 @import '../css/reviews.css';
 @import '../css/partners.css';
+@import '../css/contacty.css';
 @import '../css/footer.css';

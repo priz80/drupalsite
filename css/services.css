@@ -1,14 +1,17 @@
+/* Заголовок секции услуг */
 .services-title {
   margin-top: 145px;
   max-width: 580px;
   margin-bottom: 7px;
 }
 
+/* Подзаголовок секции услуг */
 .services-subtitle {
   max-width: 493px;
   margin-bottom: 63px;
 }
 
+/* Текст подзаголовка */
 .services-subtitle p {
   font-weight: 500;
   font-size: 16px;
@@ -16,6 +19,7 @@
   opacity: 0.7;
 }
 
+/* Блок с карточками услуг */
 .services-item_block {
   display: flex;
   flex-wrap: wrap;
@@ -23,21 +27,25 @@
   margin-bottom: 68px;
 }
 
+/* Карточка услуги */
 .services-item {
   position: relative;
   width: 182px;
   height: 194px;
 }
 
+/* Изображение в карточке услуги */
 .services-item_img {
   position: absolute;
   left: -55px;
 }
 
+/* Иконка услуги */
 .services-item_icon {
   margin-bottom: 25px;
 }
 
+/* Адаптивность: карточки услуг на мобильных */
 @media (max-width: 1100px) {
     .services-item {
   display: flex;

@@ -16,7 +16,7 @@
 /* Горизонтальное меню: элементы в строку */
 .dropdown-menu > ul {
   display: flex;
-  /* gap: 30px; */
+  gap: 30px;
   padding: 0;
 }
 
@@ -32,17 +32,15 @@
   text-decoration: none;
 }
 
-.dropdown a:hover {
-  color: var(--icons-1);
-}
+
 
 /* === ВЫПАДАЮЩИЕ МЕНЮ (десктоп) === */
 /* Выпадающее меню: скрыто по умолчанию */
 .dropdown-content {
-  /* display: none; */
-  /* position: absolute; */
-  /* z-index: 10; */
-  /* background: #f14d34; */
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background: #f14d34;
   width: 220px;
   margin-top: -2px;
   padding: 10px 0;
@@ -127,7 +125,7 @@
 
 /* Подчёркивание на мобильных */
 /* Подчёркивание для мобильных */
-/* .under-line > a::after {
+.under-line > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -137,7 +135,7 @@
   background: var(--icons-1);
   transform: scaleX(0);
   transition: transform 0.3s ease;
-} */
+}
 
 /* Анимация подчёркивания при наведении */
 .under-line > a:hover::after {
@@ -152,7 +150,7 @@
 
 /* Стили выпадающего меню в мобильной версии */
 .mobile-menu .dropdown-content {
-  /* background: #bb321d; */
+  background: #bb321d;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -172,7 +170,7 @@
 
 /* Эффект при наведении на пункт подменю в мобильной версии */
 .mobile-menu .dropdown-content li:hover {
-  /* background: #a02a1a; */
+  background: #a02a1a;
 }
 
 /* Активное выпадающее меню в мобильной версии */

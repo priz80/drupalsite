@@ -81,7 +81,7 @@
 
 .mobile-menu.active {
   display: flex;
-
+  height: 100vh;
 }
 
 .mobile-menu ul {

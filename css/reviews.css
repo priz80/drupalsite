@@ -57,7 +57,7 @@
 
 /* Вертикальный разделитель между отзывами */
 .separator {
-  width: 1px;
+  min-width: 1px;
   min-height: 100%;
   background-color: #e0e0e0;
 }

@@ -1,16 +1,32 @@
+/* Сброс стилей */
 @import '../css/normalize.css';
+/* Стили для секции о семьях */
 @import '../css/family.css';
+/* Стили для меню */
 @import '../css/menu.css';
+/* Стили для заголовка */
 @import '../css/header.css';
+/* Стили для секции услуг */
 @import '../css/services.css';
+/* Стили для секции поддержки */
 @import '../css/support.css';
+/* Стили для секции экспертов */
 @import '../css/expert.css';
+/* Стили для секции тарифных планов */
 @import '../css/plans.css';
+/* Стили для секции дедлайнов */
 @import '../css/deadline.css';
+/* Стили для секции кейсов */
 @import '../css/cases.css';
+/* Стили для секции команды */
 @import '../css/team.css';
+/* Стили для секции отзывов */
 @import '../css/reviews.css';
+/* Стили для секции партнеров */
 @import '../css/partners.css';
+/* Стили для секции часто задаваемых вопросов */
 @import '../css/faq.css';
+/* Стили для секции контактов */
 @import '../css/contacty.css';
+/* Стили для футера */
 @import '../css/footer.css';

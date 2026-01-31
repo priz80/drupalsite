@@ -76,12 +76,12 @@
 
 .drupal-expert_img {
   position: absolute;
-  width: 1060px;
-  height: 839px;
+  width: 927px;
+  height: 820px;
   background-image: url(../img/expert_img/drupalsupport.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  right: -106px;
+  right: 0;
 }
 
 .laptop-expert_img {
@@ -137,10 +137,12 @@
   }
 
   .drupal-expert_img {
-    width: 500px;
-    height: 472px;
+    width: 1154px;
+    height: 1248px;
     background-image: url(../img/expert_img/drupal-logo.png);
-    right: -98px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
     bottom: -40px;
   }
 }

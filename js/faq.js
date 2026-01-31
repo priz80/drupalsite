@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
       faqItems.forEach(otherItem => {
         if (otherItem !== item) {
           otherItem.querySelector('.faq-answer').style.display = 'none';
-          otherItem.classList.remove('active');
+          otherItem.classList.remove('faq-active');
         }
       });
 
       // Переключить текущий ответ и класс faq-item_after
       if (answer.style.display === 'block') {
         answer.style.display = 'none';
-        item.classList.remove('active');
+        item.classList.remove('faq-active');
       } else {
         answer.style.display = 'block';
-        item.classList.add('active');
+        item.classList.add('faq-active');
       }
     });
   });
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const answer = item.querySelector('.faq-answer');
       if (answer.style.display === 'block') {
         answer.style.display = 'none';
-        item.classList.remove('active');
+        item.classList.remove('faq-active');
       }
     });
   });

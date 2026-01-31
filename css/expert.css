@@ -1,22 +1,20 @@
+/* Секция экспертов */
 #expert {
   position: relative;
   margin-bottom: 160px;
   min-height: 839px;
   background: #394047;
-  /* background-image: linear-gradient(
-    233deg,
-    rgba(255, 255, 255, 0.55) 0%,
-    rgba(255, 255, 255, 0.55) 100%
-  ); */
   margin-top: -200px;
   z-index: -1;
 }
 
+/* Контейнер для блока экспертов */
 .expert-container {
   display: flex;
   justify-content: flex-end;
 }
 
+/* Блок контента экспертов */
 .expert-block {
   width: 100%;
   max-width: 580px;
@@ -25,35 +23,42 @@
   margin-top: 405px;
 }
 
+/* Контент эксперта */
 .expert-content {
   max-width: 480px;
   margin-bottom: 59px;
 }
 
+/* Заголовок в контенте эксперта */
 .expert-content h2 {
   color: var(--white);
 }
 
+/* Блок промо-элементов эксперта */
 .expert-promo_block {
   display: flex;
   flex-direction: column;
 }
 
+/* Промо-блок эксперта */
 .expert-promo {
   width: 580px;
   display: flex;
   justify-content: space-between;
 }
 
+/* Мобильная версия блока эксперта */
 .mobile-expert {
   display: none;
 }
 
+/* Элемент промо эксперта */
 .item-expert {
   display: flex;
   gap: 20px;
 }
 
+/* Вертикальная линия в промо эксперта */
 .vline-expert {
   width: 3px;
   height: 100px;
@@ -63,6 +68,7 @@
   background-position: left;
 }
 
+/* Текст элемента промо эксперта */
 .expert-item-text {
   width: 257px;
   height: 100px;
@@ -74,6 +80,7 @@
   color: var(--white);
 }
 
+/* Изображение Drupal в секции эксперта */
 .drupal-expert_img {
   position: absolute;
   width: 927px;
@@ -84,6 +91,7 @@
   right: 0;
 }
 
+/* Изображение ноутбука в секции эксперта */
 .laptop-expert_img {
   position: absolute;
   width: 660px;
@@ -95,6 +103,7 @@
   bottom: -60px;
 }
 
+/* Основной текст элемента эксперта */
 .expert-item_text {
   font-family: var(--font-family);
   font-weight: 500;
@@ -104,6 +113,7 @@
   color: var(--white);
 }
 
+/* Адаптивность: изменения для мобильных устройств */
 @media (max-width: 1100px) {
   #expert {
     margin-top: -276px;

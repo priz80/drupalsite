@@ -1,15 +1,12 @@
+/* Секция поддержки */
 #support {
-  /* position: relative; */
-  /* margin-bottom: 160px; */
 }
 
+/* Контейнер для содержимого секции поддержки */
 .suport-container {
-  /* max-width: 1184px;
-  width: 90%;
-  margin: 0 auto; */
-  /* padding-bottom: 757px; */
 }
 
+/* Заголовок секции поддержки */
 .support-title {
   margin: 0 auto;
   margin-top: 160px;
@@ -17,6 +14,8 @@
   width: 406px;
   text-align: center;
 }
+
+/* Блок с карточками поддержки */
 .support-block {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +23,7 @@
   gap: 5px;
 }
 
+/* Карточка поддержки */
 .support-card {
   position: relative;
   border-radius: 5px;
@@ -33,33 +33,40 @@
   box-shadow: 20px 20px 40px 0 rgba(5, 12, 51, 0.05);
 }
 
+/* Контейнер внутри карточки поддержки */
 .container-card {
   margin: 27px 34px 0 26px;
 }
 
+/* Номер карточки поддержки */
 .card-num {
   font-weight: 700;
   font-size: 12px;
   opacity: 0.5;
   margin-bottom: 20px;
 }
+
+/* Заголовок карточки поддержки */
 .card-title {
-/*   font-weight: 700;
-  font-size: 18px; */
   margin-bottom: 12px;
 }
+
+/* Текст карточки поддержки */
 .card-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 138%;
   opacity: 0.7;
 }
+
+/* Изображение в карточке поддержки */
 .card-img {
   position: absolute;
   right: 0;
   bottom: -4px;
 }
 
+/* Адаптивность: карточка занимает всю ширину на мобильных */
 @media (max-width: 1100px) {
   .support-card {
     width: 100%;

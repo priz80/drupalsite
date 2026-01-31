@@ -1,12 +1,15 @@
+/* Секция команды */
 #team {
   margin-bottom: 160px;
 }
 
+/* Заголовок секции команды */
 .team-title {
   text-align: center;
   margin-bottom: 80px;
 }
 
+/* Блок с карточками команды */
 .team-block {
   display: flex;
   flex-wrap: wrap;
@@ -14,20 +17,24 @@
   gap: 120px;
 }
 
+/* Карточка одного члена команды */
 .team-tile {
   display: flex;
   flex-direction: column;
   width: 280px;
 }
 
+/* Изображение члена команды */
 .team-image {
   margin-bottom: 20px;
 }
 
+/* Выделенный текст в описании */
 .team-description span {
   font-weight: 700;
 }
 
+/* Кнопка в секции команды */
 .team-button {
   width: 260px;
   background: transparent;
@@ -36,13 +43,10 @@
   margin-top: 80px;
 }
 
+/* Текст на кнопке в секции команды */
 .team-button span {
   font-size: 12px;
   color: var(--main-black);
 }
 
-/* @media (max-width: 1100px) {
-    #team {
-        display: none;
-    }
-} */
+

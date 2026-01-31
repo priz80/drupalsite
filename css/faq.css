@@ -1,16 +1,20 @@
+/* Секция часто задаваемых вопросов */
 #faq {
   margin-bottom: 160px;
 }
 
+/* Список вопросов */
 .faq-list {
   list-style: none;
   padding: 0;
 }
 
+/* Элемент вопроса */
 .faq-item {
   padding-left: 15px;
 }
 
+/* Активный (открытый) вопрос */
 .active {
   border: 3px solid;
   border-color: var(--icons-1);
@@ -18,11 +22,13 @@
   color: var();
 }
 
+/* Вопрос (заголовок FAQ) */
 .faq-question {
   cursor: pointer;
   margin: 0;
 }
 
+/* Номер вопроса */
 .faq-num {
   font-weight: 700;
   font-size: 14px;
@@ -30,6 +36,7 @@
   padding-right: 10px;
 }
 
+/* Ответ на вопрос */
 .faq-answer {
   padding-bottom: 15px;
   padding-left: 15px;
@@ -41,6 +48,7 @@
   opacity: 0.5;
 }
 
+/* Заголовок секции FAQ */
 .faq-title {
   text-align: center;
   text-transform: uppercase;

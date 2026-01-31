@@ -1,6 +1,9 @@
+/* Секция тарифных планов */
 #plans {
   margin-bottom: 160px;
 }
+
+/* Фоновое изображение секции тарифов */
 .fon-img {
   position: absolute;
   right: 0;
@@ -8,32 +11,37 @@
   margin-top: -160px;
 }
 
+/* Заголовок секции тарифов */
 .tarif {
   padding-top: 158px;
   text-align: center;
   margin-bottom: 60px;
 }
 
+/* Блок с тарифами */
 .plans-tarif {
   display: flex;
   align-items: center;
 }
+
+/* Карточка тарифа */
 .plans-item {
-  /* border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px; */
   width: 100%;
   max-width: 390px;
-  /* height: 619px; */
   background: var(--white);
 }
 
+/* Карточка левого тарифа */
 .plans-item_left {
   margin-right: -10px;
 }
+
+/* Карточка правого тарифа */
 .plans-item_right {
   margin-left: -10px;
 }
 
+/* Центральная карточка тарифа (выделенная) */
 .plans-item_center {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -45,12 +53,14 @@
   z-index: 1;
 }
 
+/* Контейнер содержимого карточки тарифа */
 .plans-item_container {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 78px 60px 48px 60px;
 }
 
+/* Стоимость тарифа */
 .item-prise {
   font-family: var(--font-family);
   font-weight: 700;
@@ -58,10 +68,12 @@
   color: var(--icons-1);
 }
 
+/* Блок с ценой */
 .prise-block {
   display: flex;
 }
 
+/* Основная цена */
 .prise {
   font-family: var(--font-family);
   font-weight: 700;
@@ -71,6 +83,7 @@
   color: var(--main-black);
 }
 
+/* Валюта цены */
 .price-currency {
   font-family: var(--font-family);
   font-weight: 500;
@@ -79,6 +92,7 @@
   color: var(--main-black);
 }
 
+/* Период действия цены */
 .prise-time {
   font-family: var(--font-family);
   font-weight: 500;
@@ -86,30 +100,34 @@
   color: var(--main-black);
 }
 
+/* Блок текста описания тарифа */
 .plans-item_text {
   margin-bottom: 43px;
 }
+
+/* Элемент списка преимуществ тарифа */
 .plans-item_text li {
   list-style-image: url(../img/plans_img/checked.svg);
-}
-
-.plans-item_text li {
   margin-bottom: 21px;
 }
 
+/* Кнопка тарифа */
 .plans-button {
   border: 1px solid var(--icons-1);
   max-width: 260px;
 }
 
+/* Стиль текста кнопки */
 .plans-button_style {
   color: var(--icons-1);
 }
 
+/* Стиль текста кнопки при наведении */
 .plans-button_style:hover {
   color: var(--white);
 }
 
+/* Дополнительный текст под тарифами */
 .plans-ps {
   width: 100%;
   max-width: 468px;
@@ -118,6 +136,7 @@
   margin-top: 52px;
 }
 
+/* Ссылка в дополнительном тексте */
 .plans-ps a {
   font-family: var(--font-family);
   font-weight: 500;
@@ -127,6 +146,8 @@
   color: var(--main-black);
   opacity: 0.5;
 }
+
+/* Блок кнопки "взять тариф" */
 .plans-taketarif {
   width: 100%;
   max-width: 290px;
@@ -137,6 +158,7 @@
   justify-content: center;
 }
 
+/* Ссылка внутри кнопки "взять тариф" */
 .plans-taketarif a {
   font-family: var(--font-family);
   font-weight: 500;
@@ -150,17 +172,20 @@
   color: var(--main-black);
 }
 
+/* Блок с карточками тарифов */
 .plans-item_block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+/* Заголовок секции тарифов */
 .plans-title {
   text-align: center;
   margin-bottom: 46px;
 }
 
+/* Заголовок карточки тарифа */
 .plans-item_title {
   font-weight: 700;
   font-size: 22px;
@@ -168,38 +193,7 @@
   margin-bottom: 20px;
 }
 
-/* .plans-price_block {
-  width: 230px;
-  height: 112px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
- */
-/* .item-price {
-  display: flex;
-  justify-content: space-between;
-}
- */
-/* .plans-item_price {
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 100%;
-  text-transform: uppercase;
-}
- */
-/* .item-price_nominal {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 150%;
-} */
-
-/* .item-price_period {
-  font-weight: 500;
-  font-size: 16px;
-} */
-
+/* Разделительная линия между блоками */
 .plans-item_line {
   width: 100%;
   height: 1px;
@@ -208,8 +202,9 @@
   margin-bottom: 40px;
 }
 
+/* Адаптивность: скрытие линии на мобильных */
 @media (max-width: 1100px) {
-  /* .plans-item_line {
+  .plans-item_line {
     display: none;
-  } */
+  }
 }

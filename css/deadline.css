@@ -1,12 +1,15 @@
+/* Секция дедлайнов */
 #deadline {
     margin-bottom: 160px;
 }
 
+/* Заголовок секции дедлайнов */
 .deadline-title {
     max-width: 100%;
     margin-bottom: 60px;
 }
 
+/* Выделенный текст в элементе дедлайна */
 .deadline-item_text span {
     font-size: 28px;
     font-weight: 700;

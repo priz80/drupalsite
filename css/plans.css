@@ -207,4 +207,9 @@
   .plans-item_line {
     display: none;
   }
+
+  .plans-item_block {
+  justify-content: center;
+  gap: 20px;
+}
 }

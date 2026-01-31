@@ -15,7 +15,7 @@
 }
 
 /* Активный (открытый) вопрос */
-.active {
+.faq-active {
   border: 3px solid;
   border-color: var(--icons-1);
   padding-left: 12px;

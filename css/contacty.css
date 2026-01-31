@@ -37,6 +37,7 @@
   color: var(--white);
   margin-bottom: 19px;
 }
+
 /* Описание в блоке контактов */
 .contacty > p {
   font-family: var(--font-family);
@@ -56,12 +57,14 @@
   gap: 18px;
   align-items: center;
 }
+
 /* Иконка телефона */
 .tel img {
   width: 24px;
   height: 24px;
 }
 
+/* Текст номера телефона */
 .tel p {
   font-family: var(--font-family);
   font-weight: 700;
@@ -70,6 +73,7 @@
   color: var(--white);
 }
 
+/* Блок с электронной почтой */
 .email {
   width: 247px;
   height: 27px;
@@ -78,11 +82,13 @@
   gap: 16px;
 }
 
+/* Иконка электронной почты */
 .email img {
   width: 28px;
   height: 24px;
 }
 
+/* Ссылка на электронную почту */
 .email p {
   font-family: var(--font-family);
   font-weight: 700;
@@ -93,18 +99,21 @@
   color: var(--white);
 }
 
+/* Контейнер формы обратной связи */
 .forma-container {
   width: 100%;
   max-width: 480px;
   min-height: 480px;
 }
 
+/* Форма обратной связи */
 .forma {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
 
+/* Поле ввода формы */
 .input-area {
   border: 1px solid var(--white);
   border-radius: 5px;
@@ -119,6 +128,8 @@
   line-height: 114%;
   color: var(--white);
 }
+
+/* Подсказка в поле ввода */
 .input-area::placeholder {
   font-family: var(--font-family);
   font-weight: 500;
@@ -128,6 +139,7 @@
   padding-left: 24px;
 }
 
+/* Текстовое поле формы */
 .text-area {
   border: 1px solid var(--white);
   border-radius: 5px;
@@ -137,6 +149,8 @@
   opacity: 0.3;
   background-color: transparent;
 }
+
+/* Подсказка в текстовом поле */
 .text-area::placeholder {
   font-family: var(--font-family);
   font-weight: 500;
@@ -147,12 +161,15 @@
   padding-top: 26px;
 }
 
+/* Блок согласия с политикой */
 .agreement {
   display: flex;
   gap: 13px;
   margin-top: 8px;
   margin-bottom: 13px;
 }
+
+/* Метка согласия */
 .agreement label {
   font-family: var(--font-family);
   font-weight: 400;
@@ -160,6 +177,7 @@
   color: var(--white);
 }
 
+/* Чекбокс согласия */
 .checkbox {
   border: 2px solid var(--white);
   border-radius: 5px;
@@ -168,12 +186,12 @@
   opacity: 0.5;
 }
 
+/* Кнопка отправки формы */
 .forma-button {
   max-width: 480px;
 }
 
-
-
+/* Летающая D-иконка */
 .contacty-img {
   position: absolute;
   width: 290px;
@@ -185,6 +203,7 @@
   top: 0;
 }
 
+/* Большая D-иконка */
 .contacty-image {
   position: absolute;
   width: 456px;
@@ -196,19 +215,22 @@
   bottom: 0;
 }
 
+/* Адаптивность: изменения для мобильных устройств */
 @media (max-width: 1100px) {
   /* Контейнер для содержимого секции контактов */
-.contacty-container {
+  .contacty-container {
     flex-direction: column;
     padding: 40px 20px;
   }
 
+  /* Блок контактов и форма — на всю ширину */
   .contacty,
   .forma-container {
     width: 100%;
     max-width: 100%;
   }
 
+  /* Поля и кнопка — на всю ширину */
   .input-area,
   .text-area,
   .forma-button {
@@ -216,7 +238,7 @@
     max-width: 100%;
   }
 
-  /* Скрываем декоративные элементы */
+  /* Скрываем декоративные элементы на мобильных */
   .contacty-img,
   .contacty-image {
     display: none;

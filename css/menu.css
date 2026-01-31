@@ -186,6 +186,7 @@
   flex-direction: column;
   cursor: pointer;
   z-index: 20;
+  background-color: #111;
 }
 
 .burger span {

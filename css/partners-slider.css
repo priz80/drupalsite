@@ -1,3 +1,4 @@
+/* Контейнер слайдера партнеров */
 .partners-slider_container {
   position: relative;
   overflow: hidden;
@@ -5,6 +6,7 @@
   margin-bottom: 20px;
 }
 
+/* Элемент слайдера партнера */
 .partners-slider_item {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -17,12 +19,13 @@
   margin-left: 20px;
 }
 
-/* ----------- slider 1 to right track ----------- */
+/* Трек слайдера, движущийся влево */
 .slider-track_left {
   display: flex;
   animation: slide_left 30s linear infinite;
 }
 
+/* Анимация движения слайдера влево */
 @keyframes slide_left {
   0% {
     transform: translateX(0);
@@ -32,14 +35,13 @@
   }
 }
 
-
-/* ----------- slider 2 to left track ----------- */
-
+/* Трек слайдера, движущийся вправо */
 .slider-track_right {
   display: flex;
   animation: slide_right 30s linear infinite;
 }
 
+/* Анимация движения слайдера вправо */
 @keyframes slide_right {
   100% {
     transform: translateX(0);

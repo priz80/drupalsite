@@ -1,12 +1,16 @@
+/* Секция партнеров */
 #partners {
   margin-bottom: 160px;
 }
+
+/* Заголовок секции партнеров */
 .partners-title {
   text-align: center;
   margin: 0 auto;
   max-width: 700px;
 }
 
+/* Описание под заголовком партнеров */
 .partners-title p {
   font-family: var(--font-family);
   font-weight: 500;
@@ -19,6 +23,7 @@
   margin-bottom: 42px;
 }
 
+/* Блок с логотипами партнеров */
 .partners-block {
   display: flex;
   flex-direction: column;

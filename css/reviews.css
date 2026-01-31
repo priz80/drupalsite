@@ -1,17 +1,21 @@
+/* Секция отзывов */
 #reviews {
   margin-bottom: 160px;
 }
 
+/* Заголовок секции отзывов */
 .reviews-title {
   text-align: center;
   margin-bottom: 46px;
 }
 
+/* Блок с отзывами */
 .reviews-block {
   display: flex;
   justify-content: center;
 }
 
+/* Контейнер слайдера отзывов */
 .reviews-slider_container {
   margin: 0 auto;
   max-width: 980px;
@@ -25,44 +29,46 @@
   gap: 60px;
 }
 
+/* Блок описания отзыва */
 .reviews-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Логотип компании в отзыве */
 .reviews-logo {
   width: 100px;
   height: 50px;
   margin-bottom: 40px;
 }
 
-.reviews-title {
-  margin-bottom: 119px;
-}
-
+/* Заголовок отзыва */
 .reviews {
   margin-bottom: 28px;
   background-size: contain;
 }
 
+/* Подзаголовок отзыва */
 .reviews-subtitle {
   font-size: 14px;
   color: #666;
 }
 
+/* Вертикальный разделитель между отзывами */
 .separator {
   width: 1px;
   min-height: 100%;
   background-color: #e0e0e0;
-  /* margin-bottom: 20px; */
 }
 
+/* Блок со стрелками навигации */
 .reviews-arrow {
   display: flex;
   align-items: center;
 }
 
+/* Левая стрелка */
 .reviews-arrow_left,
 .reviews-arrow_right {
   width: 40px;
@@ -73,28 +79,33 @@
   cursor: pointer;
 }
 
+/* Стиль левой стрелки */
 .reviews-arrow_left {
   background-image: url(../img/reviews_img/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
+/* Стиль правой стрелки */
 .reviews-arrow_right {
   background-image: url(../img/reviews_img/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
+/* Стиль иконки левой стрелки */
 .reviews-arrow_left::before {
   transform: rotate(90deg);
   margin-right: 5px;
 }
 
+/* Стиль иконки правой стрелки */
 .reviews-arrow_right::after {
   transform: rotate(-90deg);
   margin-left: 5px;
 }
 
+/* Счётчик стрелок навигации */
 .left-arrow_count,
 .right-arrow_count {
   margin: 0 15px;

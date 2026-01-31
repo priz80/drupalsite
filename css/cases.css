@@ -1,12 +1,15 @@
+/* Секция кейсов */
 #cases {
   margin-bottom: 160px;
 }
 
+/* Заголовок секции кейсов */
 .cases-title {
   text-align: center;
   margin-bottom: 60px;
 }
 
+/* Блок с карточками кейсов */
 .cases-tile_block {
   display: flex;
   flex-wrap: wrap;
@@ -15,43 +18,51 @@
   margin-bottom: 20px;
 }
 
+/* Карточка стандартного кейса */
 .cases-tile {
   width: 380px;
   min-height: 475px;
 }
 
+/* Карточка большого кейса */
 .cases-tile_large {
   width: 780px;
   min-height: 475px;
 }
 
+/* Изображение в карточке кейса */
 .cases-tile_img {
   width: 380px;
   min-height: 215px;
 }
 
+/* Фоновое изображение для карточки */
 .image-block {
   background-image: url(../img/cases_img/image.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Карточка большого кейса */
 .cases-tile_large {
   background-image: url(../img/cases_img/imagebig.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Фоновое изображение для блока изображений */
 .images-block {
   background-image: url(../img/cases_img/images.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Фоновое изображение для вертикального блока */
 .imagev-block {
   background-image: url(../img/cases_img/imagev.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Фоновое изображение для блока с изображением */
 .img-block {
   background-image: url(../img/cases_img/img.png);
   background-repeat: no-repeat;
@@ -59,14 +70,17 @@
 }
 
 @media (max-width: 1280px) {
-  .cases-tile {
+  /* Карточка стандартного кейса */
+.cases-tile {
     width: 100%;
     min-height: 475px;
   }
-  .cases-tile_img {
+  /* Изображение в карточке кейса */
+.cases-tile_img {
     width: 100%;
   }
-  .cases-tile_large {
+  /* Карточка большого кейса */
+.cases-tile_large {
   width: 100%;
 }
 }

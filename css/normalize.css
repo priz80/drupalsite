@@ -1,3 +1,4 @@
+/* Глобальные CSS-переменные: цвета, шрифты */
 :root {
   --white: #fff;
   --main-black: #050c33;
@@ -12,8 +13,10 @@
 }
 
 *,
+/* Сброс и базовые стили для всех элементов */
 *::before,
 *::after {
+  /* Сброс и базовые стили для всех элементов */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -22,7 +25,9 @@
   outline: 1px solid red;
 } */
 
+/* Обнуление отступов, фиксированная ширина и плавная прокрутка */
 html,
+/* Основные стили тела документа: шрифт, цвета фона и текста */
 body {
   margin: 0;
   padding: 0;
@@ -32,31 +37,38 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Основные стили тела документа: шрифт, цвета фона и текста */
 body {
   font-family: var(--font-family);
   background: var(--white);
   color: var(--main-black);
 }
 
+/* Адаптивный стиль для мобильных: отступ снизу */
 @media (max-width: 1100px) {
-  body {
+  /* Основные стили тела документа: шрифт, цвета фона и текста */
+body {
     margin-bottom: 52px;
   }
 }
 
+/* Удаление маркеров списков */
 li {
   list-style: none;
 }
 
+/* Стили ссылок: без подчеркивания, белый цвет */
 a {
   text-decoration: none;
   color: var(--white);
 }
 
+/* Обнуление отступов у абзацев */
 p {
   margin: 0;
 }
 
+/* Центрирование контейнера с максимальной шириной */
 .container {
   max-width: 1280px;
   width: 100%;
@@ -65,6 +77,7 @@ p {
   box-sizing: border-box;
 }
 
+/* Базовый стиль кнопки: рамка, цвет, размер, выравнивание */
 .button {
   cursor: pointer;
   border-radius: 5px;
@@ -83,6 +96,7 @@ p {
   justify-content: center;
 }
 
+/* Эффект при наведении: заливка красным */
 .button:hover {
   background: var(--icons-1);
 }

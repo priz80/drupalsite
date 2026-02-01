@@ -32,8 +32,6 @@
   text-decoration: none;
 }
 
-
-
 /* === ВЫПАДАЮЩИЕ МЕНЮ (десктоп) === */
 /* Выпадающее меню: скрыто по умолчанию */
 .dropdown-content {
@@ -70,7 +68,7 @@
   overflow: hidden;
 }
 .dropdown-content li:hover {
-background-color: #a83c2b;  
+  background-color: #a83c2b;
 }
 
 /* === МОБИЛЬНОЕ МЕНЮ (адаптивное) === */
@@ -126,7 +124,6 @@ background-color: #a83c2b;
   position: relative;
 } */
 
-
 /* Подчёркивание */
 /* .under-line > a::after {
   content: "";
@@ -142,12 +139,11 @@ background-color: #a83c2b;
 } */
 
 .under-line a:hover {
- 
- border-bottom: 3px solid #f14d34;
+  border-bottom: 3px solid #f14d34;
 }
 
-.dropdown-menu li a{
-  padding-bottom : 5px;
+.dropdown-menu li a {
+  padding-bottom: 5px;
 }
 
 /* Анимация подчёркивания при наведении */
@@ -226,7 +222,7 @@ background-color: #a83c2b;
 /* === АДАПТИВ: МЕНЮ ВНИЗУ ЭКРАНА (до 1100px) === */
 @media (max-width: 1100px) {
   /* Показываем бургер */
-/*   .burger {
+  /*   .burger {
     display: flex;
   } */
 
@@ -237,7 +233,7 @@ background-color: #a83c2b;
 
   /* Прячем мобильное меню по умолчанию (оно будет показываться через JS) */
   /* Мобильное меню: скрыто по умолчанию */
-/* .mobile-menu {
+  /* .mobile-menu {
     display: none;
     position: absolute;
     top: auto;
@@ -253,13 +249,13 @@ background-color: #a83c2b;
   } */
 
   /* Активное мобильное меню: видимо */
-/* .mobile-menu.active {
+  /* .mobile-menu.active {
     display: flex;
   } */
 
   /* Фиксированная панель внизу */
   /* Контейнер для основного меню: расположение и отступы */
-/* .container-menu {
+  /* .container-menu {
     position: fixed;
     margin-bottom: 0;
     bottom: 0;
@@ -280,7 +276,7 @@ background-color: #a83c2b;
   }
 
   /* Бургер — чуть больше */
- /*  .burger span {
+  /*  .burger span {
     width: 22px;
     height: 3px;
   } */
@@ -296,7 +292,7 @@ background-color: #a83c2b;
 
   /* Убираем hover-подчёркивание */
   /* Эффект при наведении: подчеркивание */
-.under-line > a:hover {
+  .under-line > a:hover {
     border-bottom: none;
   }
 }
@@ -316,7 +312,5 @@ background-color: #a83c2b;
 /* .mobile-item_color a:hover {
   color: var(--icons-1);
 } */
-
-
 
 

@@ -3,7 +3,7 @@
 .mobile-menu-mobile {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   right: 0;
   background: #111;
@@ -16,11 +16,11 @@
 }
 
 /* Активное мобильное меню: плавное появление */
-.mobile-menu-mobile.active {
+/* .mobile-menu-mobile.active {
   display: flex;
   height: 100vh;
   
-}
+} */
 
 /* Список в мобильном меню */
 .mobile-menu-mobile ul {
@@ -51,24 +51,6 @@
   position: relative;
 }
 
-
-/* Подчёркивание для мобильных */
-/* .under-line > a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--icons-1);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-} */
-
-/* Анимация подчёркивания при наведении */
-/* .under-line > a:hover::after {
-  transform: scaleX(1);
-} */
 
 /* Выпадающие пункты в мобильном меню */
 .mobile-menu-mobile .dropdown {
@@ -168,7 +150,7 @@
     display: none;
     position: absolute;
     top: auto;
-    bottom: 60px;
+    bottom: 53px;
     left: 0;
     right: 0;
     background: #111;

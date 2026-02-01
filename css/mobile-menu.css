@@ -19,6 +19,7 @@
 .mobile-menu-mobile.active {
   display: flex;
   height: 100vh;
+  
 }
 
 /* Список в мобильном меню */
@@ -225,5 +226,5 @@
 .header-block_background {
   background-image: url(../img/header_img/preview.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
 }

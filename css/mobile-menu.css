@@ -1,6 +1,6 @@
 /* === МОБИЛЬНОЕ МЕНЮ (адаптивное) === */
 /* Скрытое мобильное меню: плавное появление снизу */
-.mobile-menu-mobile {
+/* .mobile-menu-mobile {
   display: none;
   position: absolute;
   top: 0;
@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
+} */
 
 /* Активное мобильное меню: плавное появление */
 /* .mobile-menu-mobile.active {
@@ -51,7 +51,6 @@
   position: relative;
 }
 
-
 /* Выпадающие пункты в мобильном меню */
 .mobile-menu-mobile .dropdown {
   position: relative;
@@ -84,7 +83,7 @@
 
 /* Активное выпадающее меню в мобильной версии */
 .mobile-menu-mobile .dropdown.active .dropdown-content {
-  max-height: 300px;
+  /* max-height: 300px; */
 }
 
 /* === БУРГЕР-КНОПКА === */
@@ -125,9 +124,9 @@
 }
 
 /* Активное мобильное меню: плавное появление снизу */
-.mobile-menu-mobile.active {
+/* .mobile-menu-mobile.active {
   transform: translateY(0);
-}
+} */
 
 .mobile-item_color a:hover {
   color: var(--icons-1);
@@ -148,13 +147,13 @@
   /* Мобильное меню: скрыто по умолчанию */
   .mobile-menu-mobile {
     display: none;
-    position: absolute;
-    top: auto;
-    bottom: 53px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     background: #111;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 53px);
     overflow-y: auto;
     flex-direction: column;
     z-index: 999;
@@ -164,6 +163,7 @@
   /* Активное мобильное меню */
   .mobile-menu-mobile.active {
     display: flex;
+    transform: translateY(0);
   }
 
   /* Фиксированная панель внизу */
@@ -201,8 +201,6 @@
   main {
     margin-top: -60px;
   }
-
-  
 }
 
 .header-block_background {

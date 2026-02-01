@@ -1,6 +1,19 @@
 /* Секция отзывов */
 #reviews {
+  position: relative;
   margin-bottom: 160px;
+}
+
+.quote-sign {
+  position: absolute;
+  width: 386px;
+  height: 493px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url(../img/reviews_img/right-quote-sign.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Заголовок секции отзывов */

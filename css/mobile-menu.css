@@ -221,3 +221,9 @@
 
   
 }
+
+.header-block_background {
+  background-image: url(../img/header_img/preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

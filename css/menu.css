@@ -13,6 +13,10 @@
   z-index: 10;
 }
 
+.dropdown-menu {
+  z-index: 1;
+}
+
 /* Горизонтальное меню: элементы в строку */
 .dropdown-menu > ul {
   display: flex;
@@ -52,11 +56,6 @@
   white-space: nowrap;
 }
 
-/* Эффект при наведении на пункт подменю */
-/* .dropdown-content li:hover {
-  background: #bb321d;
-}
- */
 /* Показ выпадающего меню при наведении */
 .dropdown:hover .dropdown-content {
   display: block;
@@ -71,72 +70,6 @@
   background-color: #a83c2b;
 }
 
-/* === МОБИЛЬНОЕ МЕНЮ (адаптивное) === */
-/* Скрытое мобильное меню: плавное появление снизу */
-/* .mobile-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #111;
-  flex-direction: column;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  z-index: 1000;
-} */
-
-/* Активное мобильное меню: плавное появление */
-/* .mobile-menu.active {
-  display: flex;
-  height: 100vh;
-}
- */
-/* Список в мобильном меню */
-/* .mobile-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-} */
-
-/* Элементы списка в мобильном меню */
-/* .mobile-menu li {
-  width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
- */
-/* Стили ссылок в мобильном меню */
-/* .mobile-menu a {
-  display: block;
-  padding: 12px 20px;
-  font-family: var(--second-family);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
-  text-decoration: none;
-  position: relative;
-} */
-
-/* Подчёркивание */
-/* .under-line > a::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--icons-1);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-} */
 
 .under-line a:hover {
   border-bottom: 3px solid #f14d34;
@@ -146,158 +79,23 @@
   padding-bottom: 5px;
 }
 
-/* Анимация подчёркивания при наведении */
-/* .under-line > a:hover::after {
-  transform: scaleX(1);
-} */
-
-/* Выпадающие пункты в мобильном меню */
-/* Выпадающие пункты в мобильном меню */
-/* .mobile-menu .dropdown {
-  position: relative;
-} */
-
-/* Стили выпадающего меню в мобильной версии */
-/* .mobile-menu .dropdown-content {
-  background: #bb321d;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.4s ease;
-} */
-
-/* Элементы выпадающего меню в мобильной версии */
-/* .mobile-menu .dropdown-content li {
-  padding: 10px 20px;
-  padding-left: 40px;
-  color: white;
-  font-size: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-} */
-
-/* Эффект при наведении на пункт подменю в мобильной версии */
-/* .mobile-menu .dropdown-content li:hover {
-  background: #a02a1a;
-} */
-
-/* Активное выпадающее меню в мобильной версии */
-/* .mobile-menu .dropdown.active .dropdown-content {
-  max-height: 300px;
-} */
-
-/* === БУРГЕР-КНОПКА === */
-/* .burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 20;
-  background-color: #111;
-} */
-
-/* .burger span {
-  width: 25px;
-  height: 3px;
-  background: var(--white);
-  margin: 3px 0;
-  transition: 0.3s;
-  border-radius: 2px;
-} */
-
-/* Анимация: бургер → крестик */
-/* .burger.active span:nth-child(1) {
-  transform: rotate(-45deg) translate(-7px, 8px);
-}
-
-.burger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.burger.active span:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-} */
-
-/* === АДАПТИВ (до 1100px) === */
 /* === АДАПТИВ: МЕНЮ ВНИЗУ ЭКРАНА (до 1100px) === */
 @media (max-width: 1100px) {
-  /* Показываем бургер */
-  /*   .burger {
-    display: flex;
-  } */
 
   /* Скрываем десктопное меню */
   .desktop-menu .dropdown-menu {
     display: none;
   }
 
-  /* Прячем мобильное меню по умолчанию (оно будет показываться через JS) */
-  /* Мобильное меню: скрыто по умолчанию */
-  /* .mobile-menu {
-    display: none;
-    position: absolute;
-    top: auto;
-    bottom: 60px;
-    left: 0;
-    right: 0;
-    background: #111;
-    max-height: calc(100vh - 80px);
-    overflow-y: auto;
-    flex-direction: column;
-    z-index: 999;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
-  } */
-
-  /* Активное мобильное меню: видимо */
-  /* .mobile-menu.active {
-    display: flex;
-  } */
-
-  /* Фиксированная панель внизу */
-  /* Контейнер для основного меню: расположение и отступы */
-  /* .container-menu {
-    position: fixed;
-    margin-bottom: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #111;
-    padding: 12px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  } */
-
   /* Логотип — маленький */
   .logo img {
     height: 24px; /* уменьшаем лого */
   }
 
-  /* Бургер — чуть больше */
-  /*  .burger span {
-    width: 22px;
-    height: 3px;
-  } */
-
   /* Отступ сверху у header, чтобы контент не скрывался под фиксированной панелью */
   header {
     padding-bottom: 60px; /* место для фиксированного меню */
   }
-
-  main {
-    margin-top: -60px; /* если header не даёт отступа */
-  }
-
-  /* Убираем hover-подчёркивание */
-  /* Эффект при наведении: подчеркивание */
-  .under-line > a:hover {
-    border-bottom: none;
-  }
 }
 
-.dropdown-menu {
-  z-index: 1;
-}
 

@@ -8,7 +8,7 @@
     left: 0;
     right: 0;
     background: #111;
-    max-height: calc(100vh - 53px);
+    max-height: calc(100vh - 153px);
     overflow-y: auto;
     flex-direction: column;
     z-index: 999;

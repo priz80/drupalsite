@@ -1,0 +1,30 @@
+/* === БУРГЕР-КНОПКА === */
+.burger-mobile {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 20;
+  background-color: #111;
+}
+
+.burger-mobile span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Анимация: бургер → крестик */
+.burger-mobile.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.burger-mobile.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-mobile.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

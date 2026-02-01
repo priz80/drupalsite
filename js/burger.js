@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const element = document.getElementsByName('body');
 
 document.querySelector('.burger-mobile').addEventListener('click', function () {
   document.body.classList.toggle('no-scroll');

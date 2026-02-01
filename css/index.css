@@ -4,6 +4,7 @@
 @import '../css/family.css';
 /* Стили для меню */
 @import '../css/menu.css';
+@import '../css/mobile-menu.css';
 /* Стили для заголовка */
 @import '../css/header.css';
 /* Стили для секции услуг */

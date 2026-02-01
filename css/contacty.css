@@ -23,30 +23,34 @@
   justify-content: space-between;
   padding-top: 117px;
   margin-bottom: 110px;
+  gap: 160px;
 }
 
 /* Блок с информацией о контактах */
 .contacty {
   width: 100%;
   max-width: 480px;
-  height: 439px;
+  min-height: 439px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 /* Заголовок в блоке контактов */
-.contacty h2 {
+.contacty-title h2 {
   color: var(--white);
   margin-bottom: 19px;
 }
 
 /* Описание в блоке контактов */
-.contacty > p {
+.contacty-title > p {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
   opacity: 0.7;
   line-height: 157%;
   color: var(--white);
-  margin-bottom: 142px;
+  /* margin-bottom: 142px; */
 }
 
 /* Блок с номером телефона */

@@ -297,20 +297,7 @@
   }
 }
 
-/* Скрытое мобильное меню: плавное появление снизу */
-/* Эффект плавного появления мобильного меню снизу */
-/* .mobile-menu {
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-} */
-
-/* Активное мобильное меню: плавное появление снизу */
-/* .mobile-menu.active {
-  transform: translateY(0);
-} */
-
-/* .mobile-item_color a:hover {
-  color: var(--icons-1);
-} */
-
+.dropdown-menu {
+  z-index: 1;
+}
 

@@ -37,6 +37,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.no-scroll::-webkit-scrollbar {
+  width: 0;
+}
+
 /* Основные стили тела документа: шрифт, цвета фона и текста */
 body {
   font-family: var(--font-family);

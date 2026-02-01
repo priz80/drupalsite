@@ -62,10 +62,6 @@
   min-width: 3px;
   height: 100%;
   background-color: var(--icons-1);
-  /* background-image: url(../img/expert_img/vlineexpert.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left; */
 }
 
 /* Текст элемента промо эксперта */

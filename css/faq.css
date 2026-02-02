@@ -3,6 +3,19 @@
   margin-bottom: 160px;
 }
 
+/* Заголовок секции FAQ */
+.faq-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+/* Вопрос (заголовок FAQ) */
+.faq-question {
+  cursor: pointer;
+}
+
+
 /* Список вопросов */
 .faq-list {
   list-style: none;
@@ -19,22 +32,25 @@
   border: 3px solid;
   border-color: var(--icons-1);
   padding-left: 12px;
-  color: var(--icons-1);
+  /* color: var(--icons-1); */
 }
 
-/* Вопрос (заголовок FAQ) */
-.faq-question {
-  cursor: pointer;
-  margin: 0;
+.faq-active .faq-question {
+  color: var(--icons-1);
 }
 
 /* Номер вопроса */
 .faq-num {
   font-weight: 700;
   font-size: 14px;
+  color: #000 !important;
   opacity: 0.5;
   padding-right: 10px;
 }
+
+
+
+
 
 /* Ответ на вопрос */
 .faq-answer {
@@ -48,9 +64,3 @@
   opacity: 0.5;
 }
 
-/* Заголовок секции FAQ */
-.faq-title {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 60px;
-}
